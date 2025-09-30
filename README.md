@@ -7,32 +7,23 @@
 # Methods
   List with methods:
   1. Data Preprocessing and Exploration
-
     - Data Loading & Inspection: The initial dataset was loaded, and its structure was inspected using descriptive statistics and data type summaries (info(), describe()).
     - Feature Scaling: Numerical features (tenure, MonthlyCharges, TotalCharges) were standardized using the StandardScaler to ensure equal contribution to model training, preventing features with large values from dominating the learning process.
-
   2. Exploratory and Statistical Analysis
-
     - Grouping and Aggregation: Churn rates were calculated by grouping the data across various categorical features (e.g., Contract type, Payment Method, Service Type) to quantify the impact of each segment.
     - Correlation Analysis: A correlation matrix was computed to identify strong relationships between independent variables and the target variable (Churn).
-
     - Visualization:
       - Distribution Plots (Histograms & Boxplots): Used to visualize the spread of numerical features (tenure, MonthlyCharges) and how their distributions differ between churning and non-churning customers.
       - Count Plots: Used to visualize churn proportions across binary and categorical features.
-
   3. Predictive Modeling and Evaluation
-
     - Train-Test Splitting: The dataset was partitioned into 80% training data and 20% testing data using stratified sampling to maintain the original class balance of the target variable (Churn) in both subsets.
-
     - Model Training: Two classification algorithms were trained:
       - Logistic Regression: Served as a simple, interpretable baseline model.
       - Random Forest Classifier: Used as a more powerful ensemble model to capture non-linear relationships and provide higher predictive performance.
-
     - Model Evaluation: Performance was assessed on the unseen test data using crucial classification metrics relevant to imbalanced data:
       - Accuracy, Precision, Recall, and F1-Score.
       - ROC-AUC Score: Used to evaluate the model's ability to distinguish between the two classes.
       - Confusion Matrices and ROC Curves: Used to visualize model performance and comparison.
-      
     - Feature Importance: The coefficients from the Logistic Regression model were used to rank features by their predictive strength for churn, providing key business insights.
 
 # Technologies 
@@ -49,7 +40,7 @@
     - Evaluation: Calculating all performance metrics (accuracy_score, roc_auc_score, confusion_matrix, etc.).
 
 # Project Description
-  Paragraph with a description of the dataset, sources, characteristics ,etc.
+  This project utilizes the Telco Customer Churn dataset, sourced from Kaggle (originally provided by IBM), to develop predictive models aimed at minimizing customer attrition in the telecommunications sector. The dataset comprises 7,043 records, with each row representing a unique customer and including 21 attributes. These attributes span three main categories: demographic information (e.g., gender, senior citizen status, dependents), account details (e.g., tenure, contract type, monthly and total charges), and subscribed services (e.g., fiber optic internet, technical support, streaming). The target variable, 'Churn', is a binary flag indicating whether a customer left the company last month. A key characteristic of this data is the inherent class imbalance, reflecting the real-world challenge where the majority of customers are retained. The analysis and modeling steps are designed to identify the critical drivers of this competitive market attrition and accurately forecast which customers are most likely to churn.
 
 # Steps
   Add here any insights you had during the project
