@@ -43,7 +43,22 @@
   This project utilizes the Telco Customer Churn dataset, sourced from Kaggle (originally provided by IBM), to develop predictive models aimed at minimizing customer attrition in the telecommunications sector. The dataset comprises 7,043 records, with each row representing a unique customer and including 21 attributes. These attributes span three main categories: demographic information (e.g., gender, senior citizen status, dependents), account details (e.g., tenure, contract type, monthly and total charges), and subscribed services (e.g., fiber optic internet, technical support, streaming). The target variable, 'Churn', is a binary flag indicating whether a customer left the company last month. A key characteristic of this data is the inherent class imbalance, reflecting the real-world challenge where the majority of customers are retained. The analysis and modeling steps are designed to identify the critical drivers of this competitive market attrition and accurately forecast which customers are most likely to churn.
 
 # Steps
-  Add here any insights you had during the project
+  - Data Acquisition & Initial Inspection:
+    - The Telco Customer Churn dataset was loaded from the Kaggle source.
+    - Initial checks confirmed the data size (7,043 records) and the presence of mixed data types.
+  - Data Preprocessing:
+    - Missing values in the TotalCharges column (which were stored as objects due to empty strings) were handled by conversion to numeric type and imputation/removal (assuming they were handled in the preparation phase before the provided code snippets).
+    - All categorical features were converted into a suitable numerical format using One-Hot Encoding for model compatibility.
+  - Exploratory Data Analysis (EDA):
+    - Calculated the baseline churn rate (approximately 26.5%).
+    - Visualized feature distributions, correlation matrix, and initial plots of key features against the target variable.
+  - Feature Engineering & Scaling:
+    - Numerical features (tenure, MonthlyCharges, TotalCharges) were scaled using StandardScaler to normalize the range of values for machine learning.
+    - The data was split into training (80%) and testing (20%) sets using stratified sampling.
+  - Predictive Modeling & Evaluation:
+    - Logistic Regression was established as an interpretable baseline model.
+    - Random Forest Classifier was trained as a more robust performance model.
+    - Model performance was compared using metrics such as Accuracy, ROC-AUC, Precision, and Recall.
 
 # Conclusion
   Final conclusion
