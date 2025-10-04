@@ -61,7 +61,7 @@
     - Model performance was compared using metrics such as Accuracy, ROC-AUC, Precision, and Recall.
 
 # Conclusion
-  Final conclusion
+  The objective of this project—to predict and analyze customer churn within the telecommunications sector—was successfully met through a rigorous methodology encompassing data exploration, statistical analysis, and machine learning. The baseline churn rate of approximately 26.5% underscores the necessity of targeted retention strategies in this highly competitive market. Our analysis revealed that the single most influential predictor of attrition is the Contract Type, with customers on month-to-month plans exhibiting a significantly higher likelihood of churning. Furthermore, short customer tenure (new customers) and high Monthly Charges (often associated with Fiber Optic service) were identified as major risk factors. The final stage of predictive modeling demonstrated that the Random Forest Classifier provided the superior performance, achieving a high ROC-AUC score and establishing a robust framework for proactive intervention. In conclusion, the company should focus its efforts on two key strategic pillars: incentivizing a shift from month-to-month to longer-term contracts and immediately utilizing the Random Forest model to flag high-risk customers, allowing the retention team to focus resources where the potential revenue loss is greatest.
   
 # Contact
   linkedin, github, medium, etc 
